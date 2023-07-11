@@ -68,7 +68,7 @@
 // | ALT/´  |   1  |   2  |   3  |   4   |   5  |    |   6  |   7   |   8  |   9  |   0  | RALT/` |
 //             | ZMK/ESC | SHFT/TAB | LOWER/SPC |    | LOWER/ENT  | SHFT/BACK  | ZMK/DEL |
             bindings = <
-    &kp LGUI          &kp F1      &kp F2       &kp F3         &kp F4       &kp F5            &kp F6         &kp F7         &kp F8       &kp F9      &kp F10      &kp F11
+    &kp LGUI          &kp L_ZMK      &kp F2       &kp F3         &kp F4       &kp F5            &kp F6         &kp F7         &kp F8       &kp F9      &kp F10      &kp F11
     &mt LCTRL SE_LCBR &kp SE_LBRC &kp SE_RBRC  &kp SE_RCBR    &kp SE_PIPE  &kp SE_BSLS       &kp SE_SLSH    &kp SE_QUES    &kp SE_ASTR  &kp SE_LPRN &kp SE_RPRN  &mt RCTRL SE_PLUS
     &mt LALT SE_ACUT  &kp SE_N1   &kp SE_N2    &kp SE_N3      &kp SE_N4    &kp SE_N5         &kp SE_N6      &kp SE_N7      &kp SE_N8    &kp SE_N9   &kp SE_N0    &mt RALT SE_GRV
                                         &lt L_ZMK ESC  &mt LSHFT TAB &lt LOWER SPACE         &lt LOWER RET  &mt RSHFT BACKSPACE  &lt L_ZMK DEL
