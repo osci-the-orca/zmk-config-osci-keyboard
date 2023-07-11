@@ -46,8 +46,6 @@
     keymap {
         compatible = "zmk,keymap"; 
 
-        &kp SE_ODIA &mt RCTRL SE_ADIA
-
         main_layer_se {
 // -----------------------------------------------------------------------------------------
 // | GUI     |  Q  |  W  |  E      |  R       |  T  |    |  Y  |  U   |  I   |  O  |  P  |  Å     |
