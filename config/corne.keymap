@@ -74,5 +74,20 @@
                         >;
         };
 
+               raise_layer {
+// -----------------------------------------------------------------------------------------
+// | GUI    |   /  |   7  |   8  |   9   |  -  |    | VOLU | HOME |  UP   | PGUP | CUT   | S-CPY  |
+// | CTRL/= |   *  |   4  |   5  |   6   |  +  |    | MUT  | LEFT | DOWN  | RGHT | PASTE | CTRL/" |
+// | ALT/.  |   0  |   1  |   2  |   3   |  ,  |    | VOLD | END  | PRINT | PGDN | COPY  | ALT/`  |
+//            | ZMK/ESC | SHFT/TAB | LOWER/SPC |    | LOWER/ENT  | SHFT/BACK  | ZMK/DEL |
+            bindings = <
+    &kp LGUI          &kp SE_SLSH   &kp SE_N7 &kp SE_N8  &kp SE_N9     &kp SE_MINS          &kp C_PLAY_PAUSE  &kp HOME   &kp UP     &kp PG_UP  &kp RG(SE_X)  &kp RA(RS(RG(SE_V)))
+    &mt LCTRL SE_LCBR &kp SE_ASTR   &kp SE_N4 &kp SE_N5  &kp SE_N6     &kp SE_PLUS          &kp C_NEXT        &kp LEFT   &kp DOWN   &kp RIGHT  &kp RG(SE_V)  &mt RCTRL SE_PLUS
+    &mt LALT SE_ACUT  &kp SE_N0     &kp SE_N1 &kp SE_N2  &kp SE_N3     &kp SE_COMM          &kp C_PREVIOUS    &kp END    &kp PSCRN  &kp PG_DN  &kp RG(SE_C)  &mt RALT SE_GRV
+                                         &lt L_ZMK ESC   &mt LSHFT TAB &lt LOWER SPACE      &lt LOWER RET     &mt RSHFT BACKSPACE   &lt L_ZMK DEL
+            >;
+        };
+
+
     };
 };
