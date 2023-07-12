@@ -67,13 +67,14 @@
 // | CTRL   |   1  |   2  |   3  |   4   |   5  |    |   -  |   =   |   [  |   ]  |   \  |   +    |
 // | SHIFT  |   6  |   7  |   8  |   9   |   0  |    |   _  |   +   |   {  |   }  |   0  |  BKSP  |
 //             |  WIN   |  NONE   | LOWER/SPC |    | LOWER/ENT  | SHFT/BACK  | ZMK/DEL |
-            bindings = <
-            &kp TAB      &kp SE_Q    &kp SE_W    &kp SE_E    &kp SE_R    &kp SE_T        &kp SE_Y    &kp SE_U    &kp SE_I    &kp SE_O    &kp SE_P        &kp SE_ARNG
+           bindings = <
+   &kp TAB      &kp SE_Q    &kp SE_W    &kp SE_E    &kp SE_R    &kp SE_T        &kp SE_Y    &kp SE_U    &kp SE_I    &kp SE_O    &kp SE_P        &kp SE_ARNG
    &kp LCTRL    &kp SE_A    &kp SE_S    &kp SE_D    &kp SE_F    &kp SE_G        &kp SE_H    &kp SE_J    &kp SE_K    &kp SE_L    &kp SE_ODIA     &kp SE_ADIA
    &kp LSHFT    &kp SE_Z    &kp SE_X    &kp SE_C    &kp SE_V    &kp SE_B        &kp SE_N    &kp SE_M    &comm_labk  &dot_rabk   &kp SE_MINS     &kp SPACE
                             &lt GUI ESC  &mo LOWER  &kp SPACE           &kp RET  &mo RSE  &kp RALT
             >;
         };
+
 
                raise_layer {
 // -----------------------------------------------------------------------------------------
