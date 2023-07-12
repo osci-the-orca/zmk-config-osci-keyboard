@@ -48,30 +48,30 @@
 
         main_layer_se {
 // -----------------------------------------------------------------------------------------
-// | GUI     |  Q  |  W  |  E      |  R       |  T  |    |  Y  |  U   |  I   |  O  |  P  |  Å     |
-// | CTRL/$  |  A  |  S  |  D      |  F       |  G  |    |  H  |  J   |  K   |  L  |  Ö  | CTRL/Ä |
-// | ALT/@   |  Z  |  X  |  C      |  D       |  V  |    |  K  |  H   | , ;  | . : | - _ | RALT/' |
-//                 | RES/ESC | SHFT/TAB | LOWER/SPC |    | LOWER/ENT  | SHFT/BACK  | RES/DEL |
+// | TAB    |  Q  |  W  |  E      |  R       |  T  |    |  Y  |  U   |  I   |  O  |  P  |   Å  |
+// | CTRL   |  A  |  S  |  D      |  F       |  G  |    |  H  |  J   |  K   |  L  |  Ö  |   Ä  |
+// | SHIFT  |  Z  |  X  |  C      |  D       |  V  |    |  K  |  H   | , ;  | . : | - _ | BKSP |
+//                 | WIN/ESC | SHFT/TAB | LOWER/SPC |    | LOWER/ENT  | SHFT/BACK  | RES/DEL |
             bindings = <
-   &kp LGUI         &kp SE_Q  &kp SE_W  &kp SE_E     &kp SE_R      &kp SE_T      &kp SE_Y       &kp SE_U             &kp SE_I    &kp SE_O   &kp SE_P  &kp SE_ARNG
-   &mt LCTRL SE_DLR &kp SE_A  &kp SE_S  &kp SE_D     &kp SE_F      &kp SE_G      &kp SE_H       &kp SE_J             &kp SE_K    &kp SE_L   &kp SE_ODIA     &kp SE_ADIA
-   &mt LALT  SE_AT  &kp SE_Z  &kp SE_X  &kp SE_C     &kp SE_V      &kp SE_B      &kp SE_N       &kp SE_M             &comm_labk  &dot_rabk  &kp SE_MINS  &mt RALT SE_QUOT
-                                 &lt RSE ESC  &mt LSHFT TAB &lt LOWER SPACE      &lt LOWER RET  &mt RSHFT BACKSPACE  &lt RSE DEL
+   &kp TAB      &kp SE_Q    &kp SE_W    &kp SE_E    &kp SE_R    &kp SE_T        &kp SE_Y    &kp SE_U    &kp SE_I    &kp SE_O    &kp SE_P        &kp SE_ARNG
+   &kp LCTRL    &kp SE_A    &kp SE_S    &kp SE_D    &kp SE_F    &kp SE_G        &kp SE_H    &kp SE_J    &kp SE_K    &kp SE_L    &kp SE_ODIA     &kp SE_ADIA
+   &kp LSHFT    &kp SE_Z    &kp SE_X    &kp SE_C    &kp SE_V    &kp SE_B        &kp SE_N    &kp SE_M    &comm_labk  &dot_rabk   &kp SE_MINS     &kp BKSP
+                            &lt GUI ESC  &mo LOWER  &kp SPACE           &kp RET  &mo RSE  &kp RALT
             >;
         };
 
 
         lower_layer {
 // -----------------------------------------------------------------------------------------
-// | GUI    |  F1  |  F2  |  F3  |  F4   |  F5  |    |  F6  |  F7   |  F8  |  F9  |  F10 |  F11   |
-// | CTRL/{ |   [  |   ]  |   }  |   |   |   \  |    |   /  |   ?   |   *  |   (  |   )  |   +    |
-// | ALT/´  |   1  |   2  |   3  |   4   |   5  |    |   6  |   7   |   8  |   9  |   0  | RALT/` |
-//             | ZMK/ESC | SHFT/TAB | LOWER/SPC |    | LOWER/ENT  | SHFT/BACK  | ZMK/DEL |
+// | GUI    |   !  |   @  |   #  |   $   |   %  |    |   ^  |   &   |   *  |   (  |   )  |        |
+// | CTRL   |   1  |   2  |   3  |   4   |   5  |    |   -  |   =   |   [  |   ]  |   \  |   +    |
+// | SHIFT  |   6  |   7  |   8  |   9   |   0  |    |   _  |   +   |   {  |   }  |   0  |  BKSP  |
+//             |  WIN   |  NONE   | LOWER/SPC |    | LOWER/ENT  | SHFT/BACK  | ZMK/DEL |
             bindings = <
-    &kp LGUI          &kp F2      &kp F2       &kp F3         &kp F4       &kp F5            &kp F6         &kp F7         &kp F8       &kp F9      &kp F10      &kp F11
-    &mt LCTRL SE_LCBR &kp SE_LBRC &kp SE_RBRC  &kp SE_RCBR    &kp SE_PIPE  &kp SE_BSLS       &kp SE_SLSH    &kp SE_QUES    &kp SE_ASTR  &kp SE_LPRN &kp SE_RPRN  &mt RCTRL SE_PLUS
-    &mt LALT SE_ACUT  &kp SE_N1   &kp SE_N2    &kp SE_N3      &kp SE_N4    &kp SE_N5         &kp SE_N6      &kp SE_N7      &kp SE_N8    &kp SE_N9   &kp SE_N0    &mt RALT SE_GRV
-                                        &lt L_ZMK ESC  &mt LSHFT TAB &lt LOWER SPACE         &lt LOWER RET  &mt RSHFT BACKSPACE  &lt L_ZMK DEL
+    &kp TAB     &kp SE_EXLM     &kp SE_AT   &kp SE_HASH     &kp SE_DLR      &kp SE_PERC         &kp SE_CIRC    &kp SE_AMPR    &kp SE_ASTR    &kp SE_LPRN    &kp SE_RPRN    &trans
+    &kp LCTRL   &kp SE_N1       &kp SE_N2   &kp SE_N3       &kp SE_N4       &kp SE_N5           &kp SE_MINS    &kp SE_EQL     &kp SE_LBRC    &kp SE_RBRC    &kp SE_BSLS    &trans
+    &kp LSHIFT  &kp SE_N6       &kp SE_N7   &kp SE_N8       &kp SE_N9       kp SE_N0            &kp SE_UNDS    &kp SE_PLUS    &kp SE_LCBR    &kp SE_RCBR    &kp SE_PIPE    &kp BACKSPACE
+                                                    &kp GUI  &trans &kp SPACE                       &kp RET  &trans  &kp RALT
             >;
         };
 
