@@ -83,7 +83,7 @@
             bindings = <
     &kp TAB     &kp SE_EXLM     &kp SE_AT   &kp SE_HASH     &kp SE_DLR      &kp SE_PERC         &kp SE_CIRC    &kp SE_AMPR    &kp SE_ASTR    &kp SE_LPRN    &kp SE_RPRN    &trans
     &kp LCTRL   &kp SE_N1       &kp SE_N2   &kp SE_N3       &kp SE_N4       &kp SE_N5           &kp SE_MINS    &kp SE_EQL     &kp SE_LBRC    &kp SE_RBRC    &kp SE_BSLS    &trans
-    &kp LSHIFT  &kp SE_N6       &kp SE_N7   &kp SE_N8       &kp SE_N9       kp SE_N0            &trans    &trans   &trans    &trans &trans    &trans
+    &kp LSHFT   &trans      &trans  &trans      &trans      &trans         &trans     &trans    &trans   &trans      &trans  &kp BKSP
                                                     &kp GUI  &trans &kp SPACE                       &kp RET  &trans  &kp RALT
             >;
         };               
