@@ -15,7 +15,7 @@
 #define MAIN        0  // Main layer with SE layout
 #define SYM         1  // Symbols layer, host layout: SE
 #define NAV         2  // Navigation layer plus numpad
-#define FUNC       4  // MEDIA and Bluetooth
+#define FUNC        4  // MEDIA and Bluetooth
 
 
 
@@ -46,11 +46,11 @@
         main_layer_se {
 bindings = <
      // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                 ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-          &kp TAB         &SE_Q         &kp SE_W     &kp SE_E      &kp SE_R      &kp SE_T                        &kp SE_Y      &kp SE_U      &kp SE_I      &kp SE_O     &kp SE_P      &kp SE_ARNG
+          &kp TAB         &kp SE_Q      &kp SE_W     &kp SE_E      &kp SE_R      &kp SE_T                        &kp SE_Y      &kp SE_U      &kp SE_I      &kp SE_O     &kp SE_P      &kp SE_ARNG
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                 ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
           &kp CTRL        &kp SE_A      &kp SE_S     &kp SE_D      &kp SE_F      &kp SE_G                        &kp SE_H      &kp SE_J      &kp SE_K      &kp SE_L     &kp SE_ODIA   &kp SE_ADIA
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                 ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &kp LSHFT       &kp SE_Z     &kp SE_X      &kp SE_C      &kp SE_V      &kp SE_B                        &kp SE_N      &kp SE_M      &comm_labk    &dot_rabk    &kp SE_MINS    &mo FUNC
+          &kp LSHFT       &kp SE_Z      &kp SE_X     &kp SE_C      &kp SE_V      &kp SE_B                        &kp SE_N      &kp SE_M      &comm_labk    &dot_rabk    &kp SE_MINS    &mo FUNC
      // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                 ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                                       &lt GUI ESC    &mo NAV       &kp SPACE                                     &kp RET  &lt SYM BACKSPACE  &kp RALT
      //                             ╰─────────────┴─────────────┴─────────────╯                               ╰─────────────┴─────────────┴─────────────╯
