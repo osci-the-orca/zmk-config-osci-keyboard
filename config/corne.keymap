@@ -15,7 +15,7 @@
 #define MAIN        0  // Main layer with SE layout
 #define SYM         1  // Symbols layer, host layout: SE
 #define NAV         2  // Navigation layer plus numpad
-#define FUNC        4  // MEDIA and Bluetooth
+#define FUNC        3  // MEDIA and Bluetooth
 
 
 
