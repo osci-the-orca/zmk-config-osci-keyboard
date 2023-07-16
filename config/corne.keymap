@@ -85,7 +85,7 @@ bindings = <
             >;
         };
 
-       media_layer {
+       func_layer {
 bindings = <
      // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                 ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
           &kp TAB        &none          &none         &none        &none         &none                           &none       &kp K_VOL_UP  &kp K_VOL_DN    &trans         &trans        &none
