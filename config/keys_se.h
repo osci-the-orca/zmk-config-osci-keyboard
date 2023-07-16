@@ -151,4 +151,4 @@
 #define SE_TILD RA(SE_DIAE) // ~ (dead)
 // Row 4
 #define SE_PIPE RA(SE_LABK) // |
-#define SE_MICR RA(SE_M)    // µ
+#define SE_MICR RA(SE_M)    // µ 
