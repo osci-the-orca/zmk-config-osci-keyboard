@@ -18,7 +18,6 @@
 #define FUNC        3  // MEDIA and Bluetooth
 
 
-
 // https://zmk.dev/docs/features/debouncing
 &kscan0 {
     debounce-press-ms = <1>;    // Default is 5 ms
@@ -48,11 +47,11 @@ bindings = <
      // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                 ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
           &kp TAB         &kp SE_Q      &kp SE_W     &kp SE_E      &kp SE_R      &kp SE_T                        &kp SE_Y      &kp SE_U      &kp SE_I      &kp SE_O     &kp SE_P      &kp SE_ARNG
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                 ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &kp LCTRL        &kp SE_A      &kp SE_S     &kp SE_D      &kp SE_F      &kp SE_G                        &kp SE_H      &kp SE_J      &kp SE_K      &kp SE_L     &kp SE_ODIA   &kp SE_ADIA
+          &kp LCTRL       &kp SE_A      &kp SE_S     &kp SE_D      &kp SE_F      &kp SE_G                        &kp SE_H      &kp SE_J      &kp SE_K      &kp SE_L     &kp SE_ODIA   &kp SE_ADIA
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                 ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &kp LSHFT       &kp SE_Z      &kp SE_X     &kp SE_C      &kp SE_V      &kp SE_B                        &kp SE_N      &kp SE_M      &comm_labk    &dot_rabk    &kp SE_MINS    &mo FUNC
+          &kp LSHFT       &kp SE_Z      &kp SE_X     &kp SE_C      &kp SE_V      &kp SE_B                        &kp SE_N      &kp SE_M      &comm_labk    &dot_rabk    &kp SE_MINS   &mo FUNC
      // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                 ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                                      &lt K_CMENU ESC    &mo NAV       &kp SPACE                                 &kp RET  &lt SYM BACKSPACE  &kp RALT
+                                      &lt GUI ESC    &mo NAV       &kp SPACE                                    &kp RET  &lt SYM BACKSPACE  &kp RALT
      //                             ╰─────────────┴─────────────┴─────────────╯                               ╰─────────────┴─────────────┴─────────────╯
             >;
         };
@@ -60,13 +59,13 @@ bindings = <
       sym_layer {
 bindings = <
      // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                 ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-          &kp TAB       &kp SE_EXLM    &kp SE_AT    &kp SE_HASH   &kp SE_DLR   &kp SE_PERC                      &kp SE_AMPR   &kp SE_LPRN   &kp SE_RPRN   &kp SE_QUES   &kp SE_ASTR   &kp SE_CIRC
+          &kp TAB       &kp SE_EXLM    &kp SE_AT    &kp SE_HASH   &kp SE_DLR    &kp SE_PERC                     &kp SE_AMPR   &kp SE_LPRN   &kp SE_RPRN   &kp SE_QUES   &kp SE_ASTR   &kp SE_CIRC
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                 ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
           &kp LCTRL      &none        &none           &none       &kp SE_LABK   &kp SE_RABK                     &kp SE_DQUO   &kp SE_LBRC   &kp SE_RBRC   &kp SE_UNDS   &kp SE_SLSH   &kp SE_BSLS   
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                 ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &kp LSHIFT     &none        &none           &none       &kp SE_GRV    &kp SE_ACUT                     &kp SE_EQL    &kp SE_LCBR   &kp SE_RCBR   &kp SE_PLUS   &kp SE_PIPE    &trans
+          &kp LSHIFT     &none        &none         &kp SE_QUOT   &kp SE_GRV    &kp SE_ACUT                     &kp SE_EQL    &kp SE_LCBR   &kp SE_RCBR   &kp SE_PLUS   &kp SE_PIPE    &trans
      // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                 ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                                      &lt K_CMENU ESC     &none        &kp SPACE                                     &kp RET     &kp BACKSPACE  &kp RALT
+                                      &lt GUI ESC     &none        &kp SPACE                                     &kp RET     &kp BACKSPACE  &kp RALT
      //                             ╰─────────────┴─────────────┴─────────────╯                               ╰─────────────┴─────────────┴─────────────╯
             >;
         };
@@ -74,13 +73,13 @@ bindings = <
                 nav_layer {
 bindings = <
      // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                 ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-          &kp TAB        &kp SE_N7     &kp SE_N7     &kp SE_N8    &kp SE_N9     &kp RG(SE_X)                     &kp PG_UP     &kp HOME     &kp END        &trans        &trans         &trans
+          &kp TAB        &kp SE_N7     &kp SE_N7    &kp SE_N8     &kp SE_N9     &kp LC(SE_X)                     &kp PG_UP     &kp HOME     &kp END        &trans        &trans         &trans
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                 ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &kp LCTRL      &trans        &kp SE_N4    &kp SE_N5     &kp SE_N6     &kp RG(SE_V)                     &kp LEFT      &kp DOWN     &kp UP         &kp RIGHT     &trans         &trans   
+          &kp LCTRL      &trans        &kp SE_N4    &kp SE_N5     &kp SE_N6     &kp LC(SE_V)                     &kp LEFT      &kp DOWN     &kp UP         &kp RIGHT     &trans         &trans   
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                 ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &kp LSHIFT     &kp SE_N0     &kp SE_N1    &kp SE_N2     &kp SE_N3     &kp RG(SE_C)                     &kp PG_DN    &kp SE_LCBR   &kp SE_RCBR    &trans        &trans        &trans
+          &kp LSHIFT     &kp SE_N0     &kp SE_N1    &kp SE_N2     &kp SE_N3     &kp LC(SE_C)                     &kp PG_DN    &kp SE_LCBR   &kp SE_RCBR    &trans        &trans        &trans
      // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                 ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                                      &lt K_CMENU ESC    &none         &kp SPACE                                     &kp RET        &none         &none
+                                      &lt GUI ESC    &none         &kp SPACE                                     &kp RET        &none         &none
      //                             ╰─────────────┴─────────────┴─────────────╯                               ╰─────────────┴─────────────┴─────────────╯
             >;
         };
@@ -89,13 +88,13 @@ bindings = <
               func_layer {
 bindings = <
      // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                 ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-          &kp TAB        &none          &none         &none        &none         &none                           &none       &kp K_VOL_UP  &kp K_VOL_DN    &trans         &trans        &none
+          &kp F1         &kp F2        &kp F3        &kp F4         &kp F5       &kp F6                          &kp F7        &kp F8         &kp F9       &kp F10        &kp F11      &kp F12
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                 ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
           &kp LCTRL     &bt BT_CLR   &bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2   &none                           &none         &kp C_PP      &none          &none         &none        &none   
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                 ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
           &kp LSHIFT     &trans        &none         &none          &none        &none                           &none         &kp DEL       &none          &none         &none         &none
      // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                 ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                                       &none          &none        &none                                         &none         &none         &none
+                                       &lt GUI ESC   &none          &none                                         &none         &none         &none
      //                             ╰─────────────┴─────────────┴─────────────╯                               ╰─────────────┴─────────────┴─────────────╯
             >;
         };
