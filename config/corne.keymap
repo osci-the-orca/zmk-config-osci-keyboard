@@ -61,9 +61,9 @@ bindings = <
      // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                 ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
           &kp TAB       &kp SE_EXLM    &kp SE_AT    &kp SE_HASH   &kp SE_DLR    &kp SE_PERC                     &kp SE_AMPR   &kp SE_LPRN   &kp SE_RPRN   &kp SE_QUES   &kp SE_ASTR   &kp SE_CIRC
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                 ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &kp LCTRL      &none        &none           &none       &kp SE_LABK   &kp SE_RABK                     &kp SE_DQUO   &kp SE_LBRC   &kp SE_RBRC   &kp SE_UNDS   &kp SE_SLSH   &kp SE_BSLS   
+          &kp LCTRL      &none        &kp SE_LPRN   &kp SE_RPRN   &kp SE_LCBR   &kp SE_RCBR                     &kp SE_LABK   &kp SE_RABK   &kp SE_DQUO   &kp SE_UNDS   &kp SE_SLSH   &kp SE_BSLS   
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                 ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &kp LSHIFT     &none        &none         &kp SE_QUOT   &kp SE_GRV    &kp SE_ACUT                     &kp SE_EQL    &kp SE_LCBR   &kp SE_RCBR   &kp SE_PLUS   &kp SE_PIPE    &trans
+          &kp LSHIFT    &kp SE_GRV    &kp SE_ACUT   &kp SE_QUOT   &kp SE_LBRC   &kp SE_RBRC                     &kp SE_EQL    &kp SE_LCBR   &kp SE_RCBR   &kp SE_PLUS   &kp SE_PIPE    &trans
      // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                 ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                                       &lt GUI ESC     &none        &kp SPACE                                     &kp RET     &kp BACKSPACE  &kp RALT
      //                             ╰─────────────┴─────────────┴─────────────╯                               ╰─────────────┴─────────────┴─────────────╯
